@@ -1,0 +1,199 @@
+:root {
+  --green: #aec6bc;
+  --light-grey: #f7f7f7;
+  --dark: #0e1010;
+  --trans: all 0.3s ease-in-out;
+}
+
+html, body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Raleway', sans-serif;
+}
+
+a {
+  color: var(--dark);
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+button, input[type="submit"] {
+  font-size: 1rem;
+  cursor: pointer;
+  font-family: 'Raleway', sans-serif;
+}
+
+.container {
+  max-width: 1320px;
+  padding: 1;
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: var(--green);
+  padding: 1rem 0;
+  z-index: 999;
+}
+
+.navbar .container {
+  justify-content: space-between;
+}
+
+.site-brand {
+  color: #fff;
+  font-size: 2.4rem;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  opacity: 0.95;
+}
+
+.site-brand span {
+  font-weight: 300;
+}
+
+#navbar-show-btn {
+  background: transparent;
+  color: #fff;
+  font-size: 2rem;
+  opacity: 0.9;
+  transition: var(--trans);
+}
+
+#navbar-show-btn:hover {
+  opacity: 1;
+}
+
+#navbar-collapse {
+  background-color: var(--green);
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 300px;
+  height: 100%;
+  padding: 2rem;
+  transition: var(--trans);
+}
+
+.navbar-collapse-rmv {
+  transform: translate(0)!important;
+}
+
+#navbar-close-btn {
+  background: none;
+  color: #fff;
+  width: 35px;
+  height: 35px;
+  font-size: 2rem;
+  transition: var(--trans);
+  position: absolute;
+  right: 1rem;
+  top: 2rem;
+}
+
+#navbar-close-btn:hover {
+  background-color: #fff;
+  color: var(--dark);
+}
+.navbar-nav{
+  margin-top:5 rem;
+}
+.nav-item{
+  margin:1.6rem 0;
+}
+.nav-link{
+  color:#fff;
+  font-size:1.2rem;
+  transition: var(--trans);
+}
+.nav-link:hover{
+   opacity:0.8;
+}
+header{
+  min-heigth:100vh;
+  padding-top:7rem;
+  
+  
+}
+.contact-item {
+  display: flex;
+  align-items: center;
+  margin: 1rem 0; /* Add some margin between contact items */
+}
+
+.contact-icon {
+  margin-right: 1rem; /* Add some space between the icon and the text */
+}
+
+.contact-icon.flex {
+  align-items: center;
+}
+.contact-form {
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  gap: 1rem; /* Add space between elements */
+}
+
+.contact-form .form-control {
+  flex: 1 1 auto;
+  width: 20%; /* Ensure full width for each element */
+}
+
+.contact-form textarea {
+  height: 150px; /* Set a specific height for the textarea */
+}
+
+.contact-form .btn {
+  align-self: flex-start; /* Align button to the start of the form */
+  max-width: 200px;
+}
+#gallery {
+  background-color: var(--light-grey);
+  padding: 4rem 0;
+}
+
+.title-wrap {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.gallery-item {
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.gallery-item img:hover {
+  transform: scale(1.05);
+}
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two images per row */
+  gap: 1.5rem;
+}
+
