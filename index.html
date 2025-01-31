@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roamio</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Playfair+Display:wght@700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="site-brand">
+                <img src="images/logo.png" alt="Roamio Logo" class="logo">
+                Roamio
+            </a>
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="menu-icon"><i class="fas fa-bars"></i></label>
+            <ul class="navbar-nav">
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#gallery" class="nav-link">Gallery</a></li>
+                <li class="nav-item"><a href="#blog" class="nav-link">Blog</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <header class="hero-section">
+        <div class="container">
+            <div class="header-title">
+                <h1>Leave Your Footprints</h1>
+                <p>"Discover India's soul—where ancient traditions meet modern adventures. Embrace the vibrant culture
+                    and enchanting landscapes. Let every journey create unforgettable memories."</p>
+            </div>
+            <div class="header-form">
+                <h2>Choose Your Travel Location</h2>
+                <form class="flex">
+                    <input type="text" class="form-control" placeholder="Destination Name">
+                    <input type="date" class="form-control" placeholder="Date">
+                    <input type="number" class="form-control" placeholder="Price ($)">
+                    <input type="submit" class="btn" value="Search">
+                </form>
+            </div>
+        </div>
+    </header>
+
+    <section id="gallery" class="py-4">
+        <div class="container">
+            <div class="title-wrap">
+                <span class="sm-title">Explore India</span>
+                <h2 class="lg-title">Photo Gallery</h2>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="images/image1.jpg" alt="Taj Mahal">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/image2.jpg" alt="india gate">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/image3.jpg" alt="qutub minar">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/image4.jpg" alt="Kerala Backwaters">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/image5.jpg" alt="fort">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/ajanta.jpg" alt="ajanta">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/ranthambore.jpg" alt="ranthambore">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/golden-temple.jpg" alt="golden-temple">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-4">
+        <div class="container">
+            <div class="title-wrap">
+                <span class="sm-title">Connect with the Indian Soul</span>
+                <h2 class="lg-title">Contact Us</h2>
+            </div>
+            <div class="contact-row">
+                <div class="contact-left">
+                    <form class="contact-form">
+                        <input type="text" class="form-control" placeholder="Your Name">
+                        <input type="email" class="form-control" placeholder="Your Email">
+                        <textarea rows="4" class="form-control" placeholder="Your Message"
+                            style="resize: none;"></textarea>
+                        <input type="submit" class="btn" value="Send Message">
+                    </form>
+                </div>
+                <div class="contact-right my-2">
+                    <div class="contact-item">
+                        <span class="contact-icon flex"><i class="fa fa-phone-alt"></i></span>
+                        <div>
+                            <span>Phone</span>
+                            <p class="text">+91 985-439-2862</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon flex"><i class="fa fa-map-marked-alt"></i></span>
+                        <div>
+                            <span>Address</span>
+                            <p class="text">Nariman Point Mumbai 400 021, India</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon flex"><i class="fa fa-envelope"></i></span>
+                        <div>
+                            <span>Email</span>
+                            <p class="text">info@roamio.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="popular-places" class="py-4">
+        <div class="container">
+            <div class="title-wrap">
+                <span class="sm-title">Must-Visit Destinations</span>
+                <h2 class="lg-title">Popular Places in India</h2>
+            </div>
+            <div class="places-grid">
+                <div class="place-item">
+                    <img src="images/kashmir.jpg" alt="Jammu and Kashmir">
+                    <h3>Jammu and Kashmir</h3>
+                </div>
+                <div class="place-item">
+                    <img src="images/western-ghats.jpg" alt="Western Ghats">
+                    <h3>Western Ghats</h3>
+                </div>
+                <div class="place-item">
+                    <img src="images/chardham.jpg" alt="Chardham">
+                    <h3>Chardham</h3>
+                </div>
+                <div class="place-item">
+                    <img src="images/rajasthan.jpg" alt="Rajasthan">
+                    <h3>Rajasthan</h3>
+                </div>
+                <div class="place-item">
+                    <img src="images/meghalaya.jpg" alt="Meghalaya">
+                    <h3>Meghalaya</h3>
+                </div>
+                <div class="place-item">
+                    <img src="images/goa.jpg" alt="Goa">
+                    <h3>Goa</h3>
+                </div>
+                <div class="place-item">
+                    <img src="images/ladakh.jpg" alt="ladakh">
+                    <h3>Ladakh</h3>
+                </div>
+                <div class="place-item">
+                    <img src="images/pondicherry.jpg" alt="pondicherry">
+                    <h3>pondicherry</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-4">
+        <div class="container footer-row">
+            <div class="footer-item">
+                <a href="index.html" class="site-brand">
+                    <img src="images/logo.png" alt="Roamio Logo" class="logo">
+                    Roamio
+                </a>
+                <p class="text">"India awaits—where colors, flavors, and cultures blend seamlessly. Traverse through
+                    breathtaking landscapes and timeless history. Connect deeply with the heart of India."</p>
+            </div>
+            <div class="footer-item">
+                <h2>Follow Us On:</h2>
+                <ul class="social-links">
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
+                </ul>
+            </div>
+
+            <div class="footer-item">
+                <h2>Subscribe for Newsletter!</h2>
+                <form class="flex">
+                    <input type="email" placeholder="Enter Email" class="form-control">
+                    <input type="submit" class="btn" value="Subscribe">
+                </form>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
