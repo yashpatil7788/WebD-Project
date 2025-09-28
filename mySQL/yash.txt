@@ -1,0 +1,58 @@
+PHASE 1: PROJECT SETUP
+
+mkdir task-manager
+cd task-manager
+
+task-manager/
+│
+├── server/              # backend files
+│   ├── routes/
+│   ├── controllers/
+│   ├── db.js
+│   ├── server.js
+│
+├── public/              # frontend files
+│   ├── index.html
+│   ├── styles.css
+│   ├── script.js
+│
+├── .env                 # environment variables
+├── package.json         # auto-generated
+
+
+ PHASE 2: BACKEND SETUP
+
+npm init -y (in vscode)
+npm install express mysql2 dotenv cors  (in vscode)
+
+create .env file
+
+Create server/db.js
+
+ Create server/server.js
+
+Create server/routes/taskRoutes.js
+
+Create server/controllers/taskController.js
+
+ PHASE 3: FRONTEND SETUP:
+
+Create public/index.html
+
+Create public/styles.css
+
+Create public/script.js
+
+ PHASE 4: DATABASE SETUP
+
+Open cmd prompt and paste: mysql -u root -p
+
+enter MySQL password
+
+Create Database and Table
+
+PHASE 5: RUN AND TEST
+
+Start the Server: node server/server.js
+
+Open in Browser   considering this sequesnce guide me for project of calculator

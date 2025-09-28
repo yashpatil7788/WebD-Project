@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital clock</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="digital-clock-app">
+        <div class ="digit" style="display: flex; justify-content: center;">
+            <div id="hour">1</div>
+            <span>:</span>
+            <div id="minute">1</div>
+            <span>:</span>
+            <div id="seconds">1</div>
+        </div>
+        <div>
+            <button onclick="set12HourFormat()">12hr system</button>
+            <button onclick="set24HourFormat()">24hr system</button>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
